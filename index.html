@@ -1,13 +1,84 @@
+<!doctype html>
 
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ilya Zakharov</title>
-	</head>
-	<body>
-		Hey! My name is Ilya.<br>
-		I program <a href="https://github.com/ilya101010">stuff</a> (say, <a href="https://github.com/jinet-vm/vmm">a hypervisor</a>).<br>
-		I listen to <a href="https://www.last.fm/user/ilya101010">stuff</a>.<br>
-		I talk: <a href="https://facebook.com/ilya101010">FB</a>, <a href="https://vk.com/ilya101010">VK</a>, <a href="https://telegram.me/ilya101010">Telegram</a>.
-	</body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ilya101010</title>
+  <meta name="description" content="ilya101010">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+      body, h1
+      {
+        font-family: monospace;
+        font-size: 10pt;
+      }
+
+      h1 { color: black; }
+      #alsoknown { color: gray;  }
+
+      a:link, a:visited, a:hover
+      {
+        color: black;
+      }
+
+      a:link, a:visited
+      {
+        text-decoration-line: none;
+      }
+
+      a:active, a:hover
+      {
+        text-decoration-line: underline;
+      }
+
+      a:active { color: gray; }
+
+      body
+      {
+        margin: 10px;
+        background-color: #f7f3eb;
+      }
+
+      img
+      {
+        border: 1px solid black;
+      }
+
+      ul
+      {
+        list-style: none;
+        padding-left: 0;
+      }
+  </style>
+
+</head>
+
+<body>
+  <h1>ILYA ZAKHAROV</h1>
+  <p><a onclick="toggle()">[also known as...]</a></p>
+
+  <p id="alsoknown" style="display: none;">also known as <b>ilya101010</b><br/>
+  also known as <b>Ilia Zakharov</b> [Russian passport transcription]<br/>
+  also known as <b>Захаров Илья Александрович</b> [full name in Russian]</p>
+  <img src="me_pitt.png" width="200" height="200" /><br />
+  <ul>
+      <li><a href="cv.pdf">[CV] (circa 2020)</a></li>
+      <li><a href="https://vk.com/ilya101010">[VK]</a> <a href="https://telegram.me/ilya101010">[Telegram]</a></li>
+      <li><a href="https://github.com/ilya101010">[Github]</a> <a href="https://instagram.com/ilya101010">[Instagram]</a></li>
+      <li><a href="https://last.fm/user/ilya101010">[last.fm]</a> <a href="https://twitter.com/ilya101010">[Twitter]</a></li>
+  </ul>
+
+  <script>
+  function toggle() {
+    var x = document.getElementById("alsoknown");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+</body>
 </html>
